@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <gishan.volumemeasurementtool.measurements.area.renderers.TruckSpaceView
+        android:id="@+id/floorplan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|start"
+        android:onClick="onClearButtonClicked"
+        fab:fab_colorNormal="@color/red"
+        android:src="@drawable/ic_cross"
+        fab:fab_colorPressed="@color/red"
+        fab:fab_size="normal" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|start"
+        android:onClick="onPauseButtonClick"
+        android:src="@drawable/ic_pause"
+        fab:fab_colorNormal="@color/colorAccent"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        fab:fab_size="normal" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="23sp"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

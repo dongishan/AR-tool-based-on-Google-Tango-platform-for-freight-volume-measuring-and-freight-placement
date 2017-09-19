@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <gishan.volumemeasurementtool.customviews.ProgressCircleView
+            android:id="@+id/circleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="60sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/tvRatio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPercentage"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvProductsLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_horizontal"
+        android:text="@string/of_space_full"
+        android:textSize="25sp"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>

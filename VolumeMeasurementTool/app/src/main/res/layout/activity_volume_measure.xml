@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".measurements.volumetric.MeasurementActivity">
+
+
+    <org.rajawali3d.view.SurfaceView
+        android:id="@+id/ar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="horizontal">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/calculate"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="calculate"
+            fab:fab_colorNormal="@color/green"
+            fab:fab_colorPressed="@color/green"
+            android:src="@drawable/ic_tick"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addVolPoint"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="addVolumePoint"
+            fab:fab_colorNormal="@color/yellow"
+            fab:fab_colorPressed="@color/yellow"
+            android:src="@drawable/ic_add"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="addPoint"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            android:src="@drawable/ic_add"
+            fab:fab_size="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:orientation="horizontal">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/clear_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearPoints"
+            fab:fab_colorNormal="@color/red"
+            fab:fab_colorPressed="@color/red"
+            android:src="@drawable/ic_cross"
+            fab:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/undo_point"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="undoPoint"
+            fab:fab_colorNormal="@color/gray"
+            fab:fab_colorPressed="@color/gray"
+            android:src="@drawable/ic_undo"
+            fab:fab_size="mini" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/crosshair"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/crosshair_icon" />
+
+    <!--<com.google.atap.tango.ux.TangoUxLayout-->
+        <!--android:id="@+id/layout_tango"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+</FrameLayout>

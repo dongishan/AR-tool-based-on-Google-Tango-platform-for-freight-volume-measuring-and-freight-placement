@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/imgbtnOptions"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/tvVolume"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tvVolume"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/directions" />
+
+        <TextView
+            android:id="@+id/tvVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/imgbtnOptions"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/tvVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/darker_gray"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

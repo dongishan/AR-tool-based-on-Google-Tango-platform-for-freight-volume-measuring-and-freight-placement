@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_summary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".measurements.volumetric.SummaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/summary_unsuccess"
+                android:textColor="@color/red"
+                android:textSize="23sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/tvRemainingVolume"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/tvItemVolume"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/tvWidth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/tvLength"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/colorAccent"
+        fab:menu_colorPressed="@color/colorAccent"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/addToTruck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addToTruck"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_label="@string/add_to_truck"
+            android:src="@drawable/ic_add_truck"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/simulate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="simulate"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_label="@string/simulate_item"
+            android:src="@drawable/ic_simulate"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/sendToAnother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="suggestToAnother"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_label="@string/recommend_to_another"
+            android:src="@drawable/ic_recommend"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/generateBluePrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generateBlueprint"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_label="@string/generate_blueprint"
+            android:src="@drawable/ic_blueprint"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/recalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recalculate"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_label="@string/recalculate_volume"
+            android:src="@drawable/ic_back"
+            fab:fab_size="mini" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

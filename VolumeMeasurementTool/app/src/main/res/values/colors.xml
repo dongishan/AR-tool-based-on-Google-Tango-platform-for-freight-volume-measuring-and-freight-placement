@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="colorPrimary">#4297D9</color>
+    <color name="colorPrimaryDark">#347BAD</color>
+    <color name="colorAccent">#2B5B9C</color>
+    <color name="brightRed">#FF0000</color>
+    <color name="red">#DE5347</color>
+    <color name="brightGreen">#ff00ff00</color>
+    <color name="green">#20A464</color>
+    <color name="gray">#B3B3B3</color>
+    <color name="blueprintColor">#050490</color>
+    <color name="yellow">#FFCE42</color>
+    <color name="white">#FFFFFF</color>
+    <item name="explored_space" type="color">#d2d2d2</item>
+    <item name="furniture" type="color">#20A464</item>
+    <item name="user_marker" type="color">#4297D9</item>
+    <item name="darker_gray" type="color">#858787</item>
+</resources>

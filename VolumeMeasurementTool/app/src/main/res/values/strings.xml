@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Truck</string>
+    <string name="app_short_name">Smart Truck</string>
+    <string name="version">Version</string>
+    <string name="version_number">0.0.0.1</string>
+
+    <!--Login Activity!-->
+    <string name="login">Login</string>
+
+    <string name="driverId">Carrier ID</string>
+    <string name="password">Password</string>
+    <string name="driver_login">Carrier Login</string>
+    <string name="error_title">Error</string>
+    <string name="info_title">Information</string>
+
+    <string name="please_wait">Loading... Please wait...</string>
+    <string name="title_activity_home">Home</string>
+    <string name="about">About</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="exception_out_of_date">"Tango service outdated!"</string>
+    <string name="exception_tango_error">"Tango exception!"</string>
+    <string name="exception_tango_invalid">"Tango invalid exception! Try again!"</string>
+    <string name="failed_measurement">Failed to fit plane</string>
+    <string name="point_not_clear">Point is not clear</string>
+    <string name="failed_permissions">Permissions required!</string>
+
+    <string name="point_added">Point Added</string>
+    <string name="title_activity_measurement">Measure an item</string>
+    <string name="title_activity_blueprint">Blueprint of the measurement</string>
+
+    <string name="title_activity_simulation">Simulate an item</string>
+
+    <string name="notifications_accept_button">Accept</string>
+    <string name="notifications_reject_button">Reject</string>
+    <string name="notifications_from_format" formatted="false">Requested by: %s, %s</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_home">Home</string>
+    <string name="home_title_history">History</string>
+    <string name="home_title_notifications">Notifications</string>
+    <string name="home_title_logout">Logout</string>
+    <string name="carrier_id">Carrier ID: %s</string>
+    <string name="item_distance">%skm away</string>
+    <string name="request">Request</string>
+    <string name="items_added_today">Items in your truck</string>
+    <string name="title_recommendations">Recommend to another carrier</string>
+    <string name="sale_today_item" formatted="false">%s at %s</string>
+    <string name="price">£%s</string>
+    <string name="of_space_full">of your truck space is full</string>
+    <string name="measure_item">Measure an item</string>
+    <string name="calculate_truck_space">Calculate truck space</string>
+
+    <string name="title_activity_summary">Measurement Summary</string>
+    <string name="summary_success">This item can be stored in your truck</string>
+    <string name="summary_unsuccess">This item cannot be stored in your truck!</string>
+    <string name="dimensional_weight">Dimensional Weight:</string>
+    <string name="shipping_girth">Shipping Girth: </string>
+    <string name="cubic_size">Item volume: </string>
+    <string name="remaining_truck_volume">Remaining truck volume: </string>
+    <string name="item_length">Length: </string>
+
+    <string name="title_activity_truck_space">Calculate truck space</string>
+    <string name="truck_space">Remaining truck space:</string>
+    <string name="pause">Pause</string>
+    <string name="clear">Clear</string>
+    <string name="refresh">Refresh</string>
+    <string name="destination">Destination</string>
+    <string name="pickup_location">Pickup location</string>
+    <string name="recalculate_volume">Recalculate volume</string>
+    <string name="generate_blueprint">Generate blueprint</string>
+    <string name="recommend_to_another">Recommend to another carrier</string>
+    <string name="simulate_item">Simulate item</string>
+    <string name="add_to_truck">Add to truck</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/llButtons"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/tvTitle"
+            android:layout_below="@id/tvTitle"
+            android:textColor="@color/darker_gray"
+            android:paddingEnd="8dp"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/tvTitle"
+            android:layout_below="@id/tvAddress"
+            android:textColor="@color/darker_gray"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp" />
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tvDetails"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAccept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/checkmark"
+                android:background="@android:color/transparent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnReject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/decline_icon"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

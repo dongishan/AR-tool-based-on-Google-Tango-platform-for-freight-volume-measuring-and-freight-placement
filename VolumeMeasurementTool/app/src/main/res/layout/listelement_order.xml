@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <gishan.volumemeasurementtool.customviews.ProgressCircleView
+            android:id="@+id/circleView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/circleView"
+            android:layout_alignEnd="@id/circleView"
+            android:layout_alignStart="@id/circleView"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_alignTop="@id/circleView"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/request"/>
+
+        <TextView
+            android:id="@+id/tvShopId"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/circleView"
+            android:layout_toStartOf="@id/btnRequest"
+            android:textColor="@android:color/black"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvShopId"
+            android:layout_toEndOf="@id/circleView"
+            android:layout_toStartOf="@id/btnRequest"
+            android:textColor="@color/darker_gray"
+            android:paddingEnd="8dp"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/circleView"
+            android:layout_toStartOf="@id/btnRequest"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/darker_gray"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
